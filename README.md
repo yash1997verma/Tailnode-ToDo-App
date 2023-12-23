@@ -4,8 +4,7 @@ LiveLink: https://todo-dzxl.onrender.com/
 Create an offline TODO App for the browser using React JS.
 
 ## Features
-# Add TODOs: 
-A simple input bar to add Todo(s) on pressing the return key.
++ A simple input bar to add Todo(s) on pressing the return key.
 + A list of TODO cards where each todo is appended on creation.
 + Clicking on a TODO card marks the TODO as complete and move it to the
 bottom of the list.
@@ -28,13 +27,13 @@ any change in the state of the app (it should work like a regular offline app), 
 # Clone the repo
 git clone https://github.com/yash1997verma/Tailnode-ToDo-App.git
 
-# cd to directory
+# Change directory
 cd Tailnode-ToDo-App/
 
 # Install dependencies
 npm install
 
-# start the application
+# Start the application
 npm start
 
 # Access the app
