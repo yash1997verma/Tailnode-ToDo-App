@@ -7,4 +7,10 @@ const store = configureStore({
     }
 });
 
+// Save the tasks to localStorage whenever the state changes
+store.subscribe(() => {
+    const state = store.getState();
+    localStorage.setItem('tasks', JSON.stringify(state.taskList.tasks));
+});
+
 export default store;

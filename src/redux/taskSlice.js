@@ -3,14 +3,13 @@ import toast from "react-hot-toast";
 
 
 
+const initialState = {
+    tasks: JSON.parse(localStorage.getItem('tasks')) || [],
+};
 
 const taskSlice = createSlice({
     name: "taskList",
-    initialState:{
-        tasks: [],
-       
-    },
-
+    initialState,
     reducers:{
         addTask: (state, action) => {
             const newTask = action.payload;
