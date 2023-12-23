@@ -48,7 +48,7 @@ http://localhost:3000/
    ![Screenshot 1](./client/public/screenshots/fullscreen.JPG)
      
 
-   - *Mobile*
+   -*Mobile*
    ![Screenshot 2](./client/public/screenshots/mobile.JPG)
      
- 
+ ---
