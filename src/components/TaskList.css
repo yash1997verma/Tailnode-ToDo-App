@@ -1,0 +1,18 @@
+/* TaskList.css */
+.custom-scrollbar {
+    scrollbar-width: thin; 
+    scrollbar-color: #a6a8ad #f3f4f6; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #a6a8ad; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f3f4f6; 
+  }
+  

@@ -24,9 +24,12 @@ export default function CreateTaskModal({setOpenModal}) {
     // Check if the title is not empty before adding the task
     if (title.trim() !== '') {
       const newTask = {
+        id: Date.now().toString(), // Use a timestamp as a unique ID
         title: title,
         desc: desc,
         status: "pending",
+        createdTime: Date.now(), 
+        completedOn: null, 
       };
 
       // Dispatch action to change state
@@ -41,7 +44,7 @@ export default function CreateTaskModal({setOpenModal}) {
  
 
   return (
-    <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-opacity-50 bg-gray-500'>
+    <div className='fixed top-0 z-10 left-0 w-full h-full flex items-center justify-center bg-opacity-50 bg-gray-500'>
       <div className="bg-blue-100  shadow-md rounded-md w-[70%] max-w-md relative">
             <svg
                     onClick={handleClose}
