@@ -40,3 +40,15 @@ npm start
 http://localhost:3000/
 
 
+**Screenshots**
+
+   
+
+   -*Full Screen* 
+   ![Screenshot 1](./client/public/screenshots/fullscreen.JPG)
+     
+
+   - *Mobile*
+   ![Screenshot 2](./client/public/screenshots/mobile.JPG)
+     
+ 
