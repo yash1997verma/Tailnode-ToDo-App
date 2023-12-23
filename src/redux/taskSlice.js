@@ -23,11 +23,16 @@ const taskSlice = createSlice({
         },
         updateTaskStatus: (state, action) => {
             const { taskId, status } = action.payload;
-            state.tasks = state.tasks.map((task) =>
-              task.id === taskId ? { ...task, status: status, completedOn:Date.now() } : task
+            state.tasks = state.tasks.map((task) =>{
+                if(task.id === taskId && task.status !== 'completed'){
+                    task.success("Task marked completed");
+                    return { ...task, status: status, completedOn: Date.now() };
+                }else{
+                    return task;
+                }
+            }
             );
-           
-            toast.success(`Task marked as ${status}`);
+            
         },
         resetTasks: (state) => {
             state.tasks = [];
